@@ -165,14 +165,25 @@ namespace Arrays_Shua
             /*lblTitle.Text = "Enter Value student " + (i + 1);*/
 
             f2.Update(Convert.ToInt32(lblTitle.Text), txtName.Text, gender, hobbies, cmbFavcolor.Text, txtSaying.Text, txtUsername.Text, txtPassword.Text);
+            
             wb.LoadFromFile(@"C:\Users\ACT-STUDENT\Desktop\Arrays shuaaa\Book1.xlsx");
             Worksheet sh = wb.Worksheets[0];
 
-            wb.SaveToFile(@"C:\Users\ACT-STUDENT\Desktop\Arrays shuaaa\Book1.xlsx", ExcelVersion.Version2016);
-            logs.Insertlogs("Pantuan", "Update Student");            
-            //DataTable dt = sh.ExportDataTable();
-            //f2.dataGridView1.DataSource = dt;
             int r = f2.dataGridView1.CurrentCell.RowIndex + 2;
+            sh.Range[r, 1].Value = txtName.Text;
+            sh.Range[r, 2].Value = gender;
+            sh.Range[r, 3].Value = hobbies;
+            sh.Range[r, 4].Value = cmbFavcolor.Text;
+            sh.Range[r, 5].Value = txtSaying.Text;
+            sh.Range[r, 6].Value = txtUsername.Text;
+            sh.Range[r, 7].Value = txtPassword.Text;
+            //Status
+            sh.Range[r, 9].Value = txtProfilePic.Text;
+            wb.SaveToFile(@"C:\Users\ACT-STUDENT\Desktop\Arrays shuaaa\Book1.xlsx", ExcelVersion.Version2016);
+            logs.Insertlogs("Pantuan", "Update Student");
+            DataTable dt = sh.ExportDataTable();
+            f2.dataGridView1.DataSource = dt;
+            
         }
 
         private void btnBrowse_Click(object sender, EventArgs e)

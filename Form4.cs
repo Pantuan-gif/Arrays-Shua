@@ -22,5 +22,28 @@ namespace Arrays_Shua
             Form1 f1 = new Form1();
             f1.Show();
         }
+
+        private void btnActive_Click(object sender, EventArgs e)
+        {
+            Active a = new Active();
+            a.Show();
+            this.Hide();
+        }
+
+        private void btnInActive_Click(object sender, EventArgs e)
+        {
+            InActive ia = new InActive();
+            ia.Show();
+            this.Hide();
+        }
+
+        private void btnLogs_Click(object sender, EventArgs e)
+        {
+            Logs L = new Logs();
+            L.Show();
+            this.Hide();
+
+        //Whatwthats
+        }
     }
 }

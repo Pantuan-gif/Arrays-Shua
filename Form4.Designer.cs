@@ -55,6 +55,7 @@
             this.btnActive.TabIndex = 1;
             this.btnActive.Text = "Active";
             this.btnActive.UseVisualStyleBackColor = true;
+            this.btnActive.Click += new System.EventHandler(this.btnActive_Click);
             // 
             // btnInActive
             // 
@@ -64,6 +65,7 @@
             this.btnInActive.TabIndex = 2;
             this.btnInActive.Text = "InActive";
             this.btnInActive.UseVisualStyleBackColor = true;
+            this.btnInActive.Click += new System.EventHandler(this.btnInActive_Click);
             // 
             // btnLogs
             // 
@@ -73,6 +75,7 @@
             this.btnLogs.TabIndex = 3;
             this.btnLogs.Text = "Logs";
             this.btnLogs.UseVisualStyleBackColor = true;
+            this.btnLogs.Click += new System.EventHandler(this.btnLogs_Click);
             // 
             // btnLogout
             // 
