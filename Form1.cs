@@ -173,8 +173,6 @@ namespace Arrays_Shua
             //DataTable dt = sh.ExportDataTable();
             //f2.dataGridView1.DataSource = dt;
             int r = f2.dataGridView1.CurrentCell.RowIndex + 2;
-            //Novo bogo
-            //Mga kakampi kong bobo
         }
 
         private void btnBrowse_Click(object sender, EventArgs e)
