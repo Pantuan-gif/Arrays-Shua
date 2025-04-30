@@ -172,8 +172,8 @@ namespace Arrays_Shua
             logs.Insertlogs("Pantuan", "Update Student");            
             //DataTable dt = sh.ExportDataTable();
             //f2.dataGridView1.DataSource = dt;
-            int r = f2.dataGridView1.CurrentCell.RowIndex + 3;
-
+            int r = f2.dataGridView1.CurrentCell.RowIndex + 2;
+            //Novo bogo
         }
 
         private void btnBrowse_Click(object sender, EventArgs e)
